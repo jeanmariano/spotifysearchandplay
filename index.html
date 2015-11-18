@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spotify Web Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="navbar">
+        <span id="navbartitle">Search and Play</span>
+      </div>
+      <div class="col-md-3"  title="Spotify Search and Play"></div>
+    </div>
+
+    <div class="row searchcontainer">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="main-container">
+        <span id="title">Find Music</span>
+        <div id="generalsearch">
+          <div class="inner-addon left-addon">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="text" id="searchbar" class="searchfield form-control" placeholder="Search by artist, album, track, genre, or year"/>
+            <div class="rightalign">
+              <a href="#" id="advancedsearchlink">Advanced search</a>
+            </div>
+          </div>
+        </div>
+        <div id="advancedsearch">
+          <span id="instructions">Search by <b>one or more</b> of the following:</span>
+          <div class="input-group">
+            <div class="input-group-addon" id="artistlabel">Artist</div>
+            <input type="text" id="artist" class="searchfield form-control" placeholder="Artist"/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon" id="albumlabel">Album</div>
+            <input type="text" id="album" class="searchfield form-control" placeholder="Album"/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon" id="tracklabel">Track</div>
+            <input type="text" id="track" class="searchfield form-control" placeholder="Track"/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon" id="genrelabel">Genre</div>
+            <input type="text" id="genre" class="searchfield form-control" placeholder="Genre"/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon" id="yearlabel">Year</div>
+            <input type="text" id="year" class="searchfield form-control" placeholder="Year"/>
+          </div>
+          <div class="rightalign">
+            <a href="#" id="generalsearchlink">Simple search</a>
+          </div>
+        </div>
+        <button id="searchbutton">Search</button><br><br>
+        <b id="searchrequired">Please enter a search term.</b>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <a id="top"></a>
+        <h3 id="resultsheader"></h3>
+        <button id="loading"><i class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></i> Loading tracks...</button>
+        <ul id="results">
+        </ul>
+        <div id="pagination">
+          <div>
+            <button id="prev">Prev</button>
+          </div>
+          <div id="counter">
+            Results 10-20
+          </div>
+          <div>
+            <button id="next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+  </div>
+</body>
+</html>
