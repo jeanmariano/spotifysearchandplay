@@ -1,11 +1,7 @@
-Jean Mariano
-UNI: jam2332
-User Interfaces Fall 2015
-Homework 1
-
-
 RUNNING THE APP
 -------------------------------------------------------------------------------
+To run, please visit: http://jeanmariano.github.io/spotifysearchandplay/
+
 My Spotify search web app is built using HTML, CSS3, and Javascript. Package
 dependencies are jQuery and Twitter Bootstrap, which are loaded via CDN, so 
 there's no need for a local install of the packages.
