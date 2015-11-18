@@ -3,6 +3,7 @@ UNI: jam2332
 User Interfaces Fall 2015
 Homework 1
 
+To run, please visit: http://jeanmariano.github.io/spotifysearchandplay/
 
 RUNNING THE APP
 -------------------------------------------------------------------------------
